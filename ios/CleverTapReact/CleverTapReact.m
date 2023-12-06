@@ -275,6 +275,11 @@ RCT_EXPORT_METHOD(onUserLogin:(NSDictionary*)profile) {
     [[self cleverTapInstance] onUserLogin:_profile];
 }
 
+RCT_EXPORT_METHOD(onUserLogout) {
+    RCTLogInfo(@"[CleverTap onUserLogout]");
+    [[self cleverTapInstance] onUserLogout];
+}
+
 RCT_EXPORT_METHOD(profileSet:(NSDictionary*)profile) {
     RCTLogInfo(@"[CleverTap profileSet: %@]", profile);
     NSDictionary *_profile = [self formatProfile:profile];
