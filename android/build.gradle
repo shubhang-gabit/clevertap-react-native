@@ -33,9 +33,6 @@ android {
 
 dependencies {
     repositories {
-        flatDir {
-            dirs 'libs'
-        }
         mavenCentral()
         mavenLocal()
         maven { url "https://maven.google.com" }
